@@ -1,10 +1,10 @@
 Doctrine in Apigility Documentation - Portuguese
-===================================
+================================================
 
-This will document how to create an API with Doctrine and Apigility.
+Isso documentará como criar uma API utilizando Doctrine e Apigility.
 
 .. toctree::
-    :caption: Table of Contents
+    :caption: Índice
 
     introduction
     about
