@@ -1,5 +1,5 @@
-Introdução
-==========
+Introduction
+============
 
 The landscape of API strategies grows every day.  In the field of PHP there are
 strategies from simple REST-only resources to fully
@@ -12,8 +12,8 @@ It also enables the ORM entity relationships to embed related data in a HAL (Hyp
 response.  This allows complex joins between entities to be represented in the API response.
 
 
-Quando você deve usar Doctrine no Apigility?
---------------------------------------------
+When should you use Doctrine in Apigility?
+------------------------------------------
 
 When you have a Doctrine project with properly mapped associations, metadata, between entities Doctrine in Apigility
 will give you a powerful head-start toward building an API.  Correct metadata is absolutly core to building an API
