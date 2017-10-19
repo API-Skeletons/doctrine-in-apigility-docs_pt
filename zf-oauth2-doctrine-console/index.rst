@@ -50,7 +50,7 @@ Console Routes
 
 * ``oauth2:public-key:delete`` Remova a chave pública do par de chaves de um cliente.
 
-* ``oauth2:jwt:create``Crie um novo JWT para um determinado cliente. Este JWT será usado por um
+* ``oauth2:jwt:create`` Crie um novo JWT para um determinado cliente. Este JWT será usado por um
    conexão oauth2 solicitando um grant_type para ``urn:ietf:params:oauth:grant-type:jwt-bearer``.
   A criação do JWT coloca a chave pública do pedido de conexão oauth2 nas tabelas OAuth2.
 
