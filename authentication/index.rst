@@ -1,5 +1,5 @@
-Authentication
-==============
+Autenticação
+============
 
 `The official Apigility documentation <https://apigility.org/documentation/auth/intro>`_
 describes the lightweight authentication infrastructure included with Apigility and how it is intended

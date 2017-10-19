@@ -3,18 +3,18 @@ Hydrator Strategies
 
 `api-skeletons/zf-doctrine-hydrator <https://github.com/api-skeletons/zf-doctrine-hydrator>`_
 
-A collection of hydrator strategies for `phpro/zf-doctrine-hydration-module <https://github.com/phpro/zf-doctrine-hydration-module>`_
-written for use with `zfcampus/zf-apigility-doctrine <https://github.com/zfcampus/zf-apigility-doctrine)>`_
+Uma coleção de estratégias de hidratação para `phpro/zf-doctrine-hydration-module <https://github.com/phpro/zf-doctrine-hydration-module>`_
+escrito para uso com `zfcampus/zf-apigility-doctrine <https://github.com/zfcampus/zf-apigility-doctrine)>`_
 
 
-Installation
-------------
+Instalação
+----------
 
-Installation of this module uses composer. For composer documentation, please refer to `getcomposer.org <http://getcomposer.org/>`_::
+A instalação deste módulo usa composer. Para documentação de referência consulte `getcomposer.org <http://getcomposer.org/>`_::
 
     composer require api-skeletons/zf-doctrine-hydrator "*"
 
-Add this module to your application's configuration::
+Adicione este módulo à configuração de sua aplicação::
 
     'modules' => array(
        ...

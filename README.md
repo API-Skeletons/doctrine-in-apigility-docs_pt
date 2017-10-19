@@ -1,4 +1,4 @@
-Doctrine in Apigility Documentation - Portuguese
+Doctrine com Apigility Documentação - Portuguese
 ================================================
 
-This documentation is hosted at http://docs.apiskeletons.com/pt/latest/
+Esta documentação está hospedada em http://docs.apiskeletons.com/pt/latest/
