@@ -1,27 +1,27 @@
-Introduction
-============
+Introdução
+==========
 
-The landscape of API strategies grows every day.  In the field of PHP there are
-strategies from simple REST-only resources to fully
+O panorama das estratégias para API's crescem todos os dias. No campo do php existem
+estratégias para recursos REST-only demonstrados por 
 `Richardson Maturity Model Level 3 <https://martinfowler.com/articles/richardsonMaturityModel.html>`_
-API engines.  Apigility falls into the Level 3 category.
+para API's. O apigility está na categoria Nível 3.
 
-An API will serve data and Doctrine in Apigility tries, at it's core, to map Doctrine entities
-to API resources.  So a Doctrine enabled resource in Apigility will provide GET, POST, PUT, PATCH, and DELETE.
-It also enables the ORM entity relationships to embed related data in a HAL (Hypertext Application Language)
-response.  This allows complex joins between entities to be represented in the API response.
+A API servirá dados e o Doctrine com Apigility tenta, no seu núcleo, mapear entidades Doctrine
+para recursos de API comsumidos pelo Apigility. Então, um recurso habilitado para Doctrine com Apigility irá fornecer os verbos GET, POST, PUT, PATCH e DELETE de forma adequada.
+Ele também permite que as relações da entidade ORM incorporem dados relacionados em um HAL (Hypertext Application Language)
+Response. Isso permite que associações complexas entre entidades sejam representados no response da API.
 
 
-When should you use Doctrine in Apigility?
+Quando você deve usar Doctrine com Apigility?
 ------------------------------------------
 
-When you have a Doctrine project with properly mapped associations, metadata, between entities Doctrine in Apigility
-will give you a powerful head-start toward building an API.  Correct metadata is absolutly core to building an API
-with this tool.  To help design your ORM `Skipper <https://skipper18.com>`_ is strongly recommended.
+Quando você possui um projeto usando Doctrine com associações adequadamente mapeadas e com metadados corretos entre entidades Doctrine com Apigility.
+Isso proporciona um poderoso início da construção de uma API. Os metadados corretos são absolutamente essenciais para a construção de uma API
+Para ajudar a projetar seu ORM `Skipper <https://skipper18.com>`_ é fortemente recomendado.
 
-You can use Doctrine in Apigility to serve pieces of your schema by filtering with hydrator strategies or you can
-serve your entire schema in an "Open-schema API" where relationships between entities are fully explored in the HAL
+Você pode usar a Doctrine com Apigility para atender partes do seu esquema, filtrando com hydrator strategies ou você pode
+servir seu esquema inteiro em uma "API de esquema aberto" onde os relacionamentos entre entidades são totalmente explorados no HAL
 _embedded data.
 
-If you're familiar with the benefits of ORM and will use it in your project and you require a fully-fledged
-API engine than this API strategy may what you're looking for.
+Se você está familiarizado com os benefícios da ORM e irá usá-lo em seu projeto e você precisa de uma solução completa
+O mecanismo e a estratégia dessa implementação pode ser o que você esteja procurando.
