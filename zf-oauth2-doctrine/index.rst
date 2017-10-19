@@ -1,14 +1,13 @@
-OAuth2 Adapter
-==============
+Adaptador OAuth2
+================
 
 `api-skeletons/zf-oauth2-doctrine <https://github.com/api-skeletons/zf-oauth2-doctrine>`_
 
 
-This module provides a Doctrine adapter for `zfcampus/zf-mvc-auth <https://github.com/zfcampus/zf-mvc-auth>`_
-and `zfcampus/zf-oauth2 <https://github.com/zfcampus/zf-oauth2>`_
-and entity definitions for all aspects of OAuth2 including Authorization Code, Access Tokens, Refresh Tokens, JWT & JTI, and Scopes.
+Este módulo fornece um adaptador Doctrine para [zfcampus/zf-mvc-auth](https://github.com/zfcampus/zf-mvc-auth) and [zfcampus/zf-oauth2](https://github.com/zfcampus/zf-oauth2)
+e definições de entidade para todos os aspectos do OAuth2 incluindo Authorization Code, Access Tokens, Refresh Tokens, JWT & JTI, e Scopes.
 
-A `Skipper <https://skipper18.com>`_ module is provided to embed in your Entity Relationship Diagram.
+A ferramenta [Skipper](https://skipper18.com) é fornecido para incorporar no seu Diagrama Entidade-Relacionamento.
 
 .. toctree::
     :caption: About
@@ -16,26 +15,26 @@ A `Skipper <https://skipper18.com>`_ module is provided to embed in your Entity 
     erd
 
 .. toctree::
-    :caption: Configuration
+    :caption: Configuração
 
     application configuration
     module configuration
     user entity configuration
 
 .. toctree::
-    :caption: Integration
+    :caption: Integração
 
     events
     integration
 
 .. toctree::
-    :caption: Advanced
+    :caption: Avançado
 
     override
     multiple
 
 .. toctree::
-    :caption: Add Ons
+    :caption: Extras
 
     add-ons
 

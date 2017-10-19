@@ -1,30 +1,34 @@
-Module Configuration
-====================
+Configuração do módulo
+======================
 
 
-Using Default Entities
-----------------------
+Usando Entidades Padronizadas
+-----------------------------
 
-Details for creating your database with the included entities are outside the scope of this project.
-Generally this is done through `doctrine/doctrine-orm-module <https://github.com/doctrine/DoctrineORMModule>`_
-with ``php public/index.php orm:schema-tool:create``
+Os detalhes para criar seu banco de dados com as entidades incluídas estão fora do escopo deste projeto.
+Geralmente isso é feito através de `doctrine/doctrine-orm-module <https://github.com/doctrine/DoctrineORMModule>`_
+com ``php public/index.php orm:schema-tool:create``
 
-By default this module uses the entities provided but you may use the adapter with your own entites
-(and map them in the mapping config section) by toggling this flag::
+Por padrão, este módulo usa as entidades fornecidas, mas você pode usar o adaptador com seus próprios
+(e mapeá-los na seção de configuração de mapeamento) perceba que existe uma configuração que usa esta funcionalidade::
 
     'zf-oauth2-doctrine' => [
         'default' => [
             'enable_default_entities' => true,
 
 
-Customizing Many to One Mapping
--------------------------------
+Personalizando o mapeamento de muitos para um (n <= 1)
+------------------------------------------------------
 
 If you need to customize the call to mapManyToOne, which creates the dynamic joins to the User
 entity from the default entites, you may add any parameters to the
-``['dynamic_mapping']['default_entity']['additional_mapping_data']`` element.  An example for a
-User entity with a primary key of user_id which does not conform to the metadata naming strategy
-is added to each entity::
+
+Se você precisa personalizar usando mapManyToOne, que cria as assossiações dinâmicas para UserEntity padrão,
+você pode adicionar estes parametros ao elemento ``['dynamic_mapping']['default_entity']['additional_mapping_data']``. 
+
+Um exemplo para um
+Entidade de usuário com uma chave primária de user_id que não está em conformidade com a estratégia de nomeação de metadados
+é adicionado a cada entidade::
 
     'refresh_token_entity' => [
         'entity' => 'ZF\OAuth2\Doctrine\Entity\RefreshToken',
@@ -40,14 +44,14 @@ is added to each entity::
     ],
 
 
-Identity field on User entity
------------------------------
+Campo de identidade na entidade de usuário
+------------------------------------------
 
-By default this Doctrine adapter retrieves the user by the `username` field on the configured
-User entity. If you need to use a different or multiple fields you may do so via the
-``auth_identity_fields`` key. For example, ZfcUser allows users to authenticate by username and/or email fields.
+or padrão, este adaptador Doctrine recupera o usuário pelo `username` no campo configurado
+na entidade de Usuário. Se você precisar usar um ou vários campos diferentes, você pode fazê-lo através do elemento
+``auth_identity_fields``. Por exemplo, o ZfcUser permite aos usuários autenticar por campos de nome de usuário e / ou email.
 
-An example to match ZfcUser ``auth_identity_fields`` configuration::
+Um exemplo para combinar ZfcUser ``auth_identity_fields`` a configuração::
 
     'zf-oauth2-doctrine' => [
         'default' => [

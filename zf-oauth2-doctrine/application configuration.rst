@@ -1,22 +1,22 @@
-Application Configuration
-==========================
+Configuração da aplicação
+=========================
 
 
-Installation
-------------
+Instalação
+----------
 
-Installation of this module uses composer. For composer documentation, please refer to `getcomposer.org <http://getcomposer.org/>`_.
+A instalação deste módulo usa composer. Para documentação de referência consulte `getcomposer.org <http://getcomposer.org/>`_::
 
 ``composer require api-skeletons/zf-oauth2-doctrine "^1.0"``
 
-Add this module to your application's configuration::
+Adicione este módulo à configuração de sua aplicação::
 
     'modules' => [
        ...
        'ZF\OAuth2\Doctrine',
     ],
 
-Global Configuration
+Configuração Global
 --------------------
 
 Copy ``config/oauth2.doctrine-orm.global.php.dist`` to your autoload directory and
@@ -25,7 +25,7 @@ adapters.  Out of the box this module provides a `default` adapter.  You will ne
 at least your User entity, which is not provided.
 
 
-zfcampus/zf-mvc-auth Configuration
+Configuração zfcampus/zf-mvc-auth
 ----------------------------------
 
 By default this module includes a `oauth2.doctrineadapter.default` adapter.

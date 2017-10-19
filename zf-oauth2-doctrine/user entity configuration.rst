@@ -1,15 +1,14 @@
-User Entity Configuration
-=========================
+Configuração de entidade de usuário
+===================================
 
+Este repositório fornece todas as entidades que você precisa para implementar OAuth2
+exceto a entidade de usuário. A razão é para que a entidade do usuário possa ser
+desacoplado do repositório do OAuth2 Doctrine em vez disso para ser vinculado
+dinamicamente em tempo de execução. Isso permite, entre outros benefícios, a capacidade
+para criar um ERD sem modificar o módulo 'OAuth2-orm.module.xml`.
 
-This repository supplies every entity you need to implement OAuth2
-except the User entity.  The reason is so the User entity can be
-decoupled from the OAuth2 Doctrine repository instead to be linked
-dynamically at run time.  This allows, among other benefits, the ability
-to create an ERD without modifying the `OAuth2-orm.module.xml` module.
+A entidade do usuário deve implementar ``ZF\OAuth2\Doctrine\Entity\UserInterface``
 
-The User entity must implement ``ZF\OAuth2\Doctrine\Entity\UserInterface``
-
-The User entity for the unit test for this module is a good template to start from:
+A entidade de usuário para o teste de unidade para este módulo é um bom modelo para começar a partir de:
 `https://github.com/api-skeletons/zf-oauth2-doctrine/blob/master/test/asset/module/Doctrine/src/Entity/User.php <https://github.com/api-skeletons/zf-oauth2-doctrine/blob/master/test/asset/module/Doctrine/src/Entity/User.php>`_
 
