@@ -1,9 +1,9 @@
-Filtering and Sorting
+Filtrando e Ordenando
 =====================
 
 `zfcampus/zf-doctrine-querybuilder <https://github.com/zfcampus/zf-doctrine-querybuilder>`_
 
-This library provides query builder directives from array parameters. This library was designed
-to apply filters from an HTTP request to give an API fluent filter and order-by dialects.
+Esta biblioteca fornece diretrizes do construtor de consultas a partir dos parâmetros da matriz. Esta biblioteca foi projetada
+para aplicar filtros a partir de uma solicitação HTTP para fornecer um filtro API fluente e ordenados por dialetos.
 
-This library implements rich filter and sorting access to developers implementing your API.
+Esta biblioteca implementa um rico filtro e classificação de acesso aos desenvolvedores que implementam sua API.
