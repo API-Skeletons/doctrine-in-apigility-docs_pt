@@ -20,8 +20,7 @@ Isso proporciona um poderoso início da construção de uma API. Os metadados co
 Para ajudar a projetar seu ORM `Skipper <https://skipper18.com>`_ é fortemente recomendado.
 
 Você pode usar a Doctrine com Apigility para atender partes do seu esquema, filtrando com hydrator strategies ou você pode
-servir seu esquema inteiro em uma "API de esquema aberto" onde os relacionamentos entre entidades são totalmente explorados no HAL
-_embedded data.
+servir seu esquema inteiro em uma "API de esquema aberto" onde os relacionamentos entre entidades são totalmente explorados por _embedded no HAL.
 
 Se você está familiarizado com os benefícios da ORM e irá usá-lo em seu projeto e você precisa de uma solução completa
 O mecanismo e a estratégia dessa implementação pode ser o que você esteja procurando.
