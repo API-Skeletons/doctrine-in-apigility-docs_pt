@@ -1,10 +1,10 @@
-Doctrine in Apigility Documentation
-===================================
+Documentação - Doctrine com Apigility 
+=====================================
 
-This will document how to create an API with Doctrine and Apigility.
+Isso documentará como criar uma API com Doctrine e Apigility.
 
 .. toctree::
-    :caption: Table of Contents
+    :caption: Índice
 
     introduction
     about
