@@ -1,7 +1,7 @@
 Documentação - Doctrine com Apigility 
 =====================================
 
-Isso documentará como criar uma API com Doctrine e Apigility.
+Documentação de como criar uma API com Doctrine e Apigility.
 
 .. toctree::
     :caption: Índice

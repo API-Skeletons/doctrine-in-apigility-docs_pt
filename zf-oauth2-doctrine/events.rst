@@ -1,14 +1,14 @@
-Events
-======
+Eventos
+=======
 
 
-Events are fully supported.  Return values are used if propagation is stopped allowing you to
-write your own handlers for any OAuth2 Adapter method.  Each function which implements
-the OAuth2 interfaces may be attached to and optionally overridden.
+Os eventos são totalmente suportados. Os valores de retorno são usados se a propagação for interrompida permitindo que você
+escreva seus próprios manipuladores para qualquer método de adaptador OAuth2. Cada função que implementa
+as interfaces OAuth2 podem ser atachadas e opcionalmente substituídas.
 
 
-Example Event Attachment
-------------------------
+Exemplo para atachar evento
+---------------------------
 
 *Module.php onBootstrap*::
 

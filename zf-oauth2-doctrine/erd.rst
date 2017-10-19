@@ -1,5 +1,5 @@
-Entity Relationship Diagram
-===========================
+Diagrama de Entidade Relacionamento
+===================================
 
 .. image:: https://raw.githubusercontent.com/API-Skeletons/zf-oauth2-doctrine/master/media/oauth2-doctrine-erd.png
 
@@ -10,23 +10,23 @@ The ERD module is located at
 and is intended to be embedded in the ERD for your project.
 
 
-Relations
----------
+Relações
+--------
 
-The User entity is provided by your application and a dynamic join is made at runtime when the metadata is gathered for Doctrine.  There is a dynamic join with Client, AuthorizationCode, AccessToken and RefreshToken.
+A entidade do usuário é fornecida pelo seu aplicativo e uma junção dinâmica é feita em tempo de execução quando os metadados são coletados pelo Doctrine. Existe uma união dinâmica com Client, AuthorizationCode, AccessToken and RefreshToken.
 
-The central OAuth2 entity is the Client.  There is a dynamic join from the Client entity to the configured User entity.  For every application owned by a User there will be a Client entry.  The User referenced from a Client is the User who owns that Client.
+A entidade central OAuth2 é o Client. Existe uma associação dinâmica da entidade Client à entidade de usuário configurada. Para cada aplicativo de um Usuário, haverá uma entrada de Client. O Usuário referenciado a partir de um Client é o Usuário que possui esse Client.
 
-The AuthorizationCode entity is used when a User connects from an application using OAuth2.  The reference to the User entity from the AuthorizationCode entity is for the User that is trying to log into the Client referenced from the AuthorizationCode entity.  The same is true for the AccessToken and RefreshToken entities.
+A entidade AuthorizationCode é usada quando um Usuário se conecta a partir de um aplicativo usando OAuth2. A referência à entidade de usuário da entidade AuthorizationCode é para o Usuário que está tentando fazer logon no Client referenciado pela entidade AuthorizationCode. O mesmo acontece com as entidades AccessToken e RefreshToken.
 
-The Scope entities are many to many relationships for Client, AuthorizationCode, AccessToken and RefreshToken.  Scopes dictate what permissions a Client has into the API.
+As entidades Scope tem a relação de muitos para muitos para Client, AuthorizationCode, AccessToken e RefreshToken. Scopes determina quais permissões um cliente tem na API.
 
-There is a one to one relationship from Client to PublicKey.  This is because the encryption side of OAuth2 is less common and to encapsulate the encryption fields into the PublicKey entity.  The JWT and JTI entities provide full support and their use in encryption falls outside the scope of this documentation.
+Existe um relacionamento de um para um do Client para o PublicKey. Isso ocorre porque o lado de criptografia do OAuth2 é menos comum e encapsulam os campos de criptografia na entidade PublicKey. As entidades JWT e JTI oferecem suporte total e seu uso na criptografia ficando de fora do escopo desta documentação.
 
 
-Database Table Namespaces
--------------------------
+Namespaces das tabelas do banco de dados
+----------------------------------------
 
-All OAuth2 tables are suffixed with _OAuth2 such as Client_OAuth2.  You can change these if you :ref:`override`.
-It is recommended your database table names match your entity names to provide canonical naming across your application.
-See also `bushbaby/zf-oauth2-doctrine-mutatetablenames <https://github.com/basz/zf-oauth2-doctrine-mutatetablenames>`_.
+Todas as tabelas OAuth2 são sufixadas com _OAuth2, como Client_OAuth2. Você pode alterá-los :ref:`override`.
+Recomenda-se que seus nomes de tabela de banco de dados correspondam aos nomes de sua entidade para fornecer nomes canônicos em sua aplicação.
+Veja também `bushbaby/zf-oauth2-doctrine-mutatetablenames <https://github.com/basz/zf-oauth2-doctrine-mutatetablenames>`_.

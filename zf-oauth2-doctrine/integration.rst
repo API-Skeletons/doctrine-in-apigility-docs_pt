@@ -1,9 +1,9 @@
 zf-doctrine-apigility Integration
 =================================
 
-Validate zf-apigility-doctrine resources
-----------------------------------------
+Validar recursos para zf-apigility-doctrine
+-------------------------------------------
 
-To validate the OAuth2 session with Query Create Filters and Query Providers implement
-``ZF\OAuth2\Doctrine\OAuth2ServerInterface`` and use ``ZF\OAuth2\Doctrine\OAuth2ServerTrait``.
-Then call ``$result = $this->validateOAuth2($scope);`` in the filter function.
+Para validar a sessão com ``Query Create Filters`` e ``Query Providers`` implement
+``ZF\OAuth2\Doctrine\OAuth2ServerInterface`` e use ``ZF\OAuth2\Doctrine\OAuth2ServerTrait``.
+Em seguida faça uma chamada ``$result = $this->validateOAuth2($scope);`` na função de filtro.
